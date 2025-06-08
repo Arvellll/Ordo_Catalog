@@ -1,0 +1,247 @@
+@use "../../global/shared" as shared;
+
+.hero{
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/public/assets/images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .frame{
+        position: absolute;
+        bottom: -65px;
+        
+
+        img{
+            height: 120px;
+        }
+        
+    }
+
+    .hero-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding-bottom: 70px;
+
+        h1{
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 108.333% */
+            width: 70%;
+
+            span{
+            color: #5296FB;
+            font-family: Outfit;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            }
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            color: #FFF;
+            font-family: Outfit;
+            font-size: 10.313px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: left;
+        }
+
+       
+        .button{
+            display: flex;
+            width: max-content;
+            border-radius: 375px;
+            background: #075E54;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            border: none;
+            padding: 4px 9px 5px 9px;  
+             
+            
+            
+            span{
+                color: #FFF;
+                font-family: shared.$outfit;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                
+            }
+            .heroo{
+                display: flex;
+
+            }
+
+            
+        }
+    }
+    .text{
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 15px */
+        }
+    }
+
+}
+
+@media (min-width: shared.$tablet-bkp){
+.hero{
+
+    .hero-inner{
+        padding-bottom: 110px;
+
+        h1{
+            width: 72%;
+            font-size: 30px;
+            line-height: normal;
+        }
+
+    }
+    .frame{
+        bottom: -130px;
+        img{
+            height: 230px;
+        }
+
+        }
+        .hero-inner{
+            gap: 10px;
+        }
+    
+}
+}
+
+@media(min-width: shared.$big-tablet-bkp){
+    .hero{
+        .hero-inner{
+            h1{
+                width: 70%;
+                font-size: 38px;
+                span{
+                    font-size: 38px;
+                    
+                }
+            }
+            .button{
+                gap: 100px;
+
+                p{
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 20px;
+                }
+                img{
+                    width: 53.333px;
+                    height: 53.333px;
+
+                }
+            }
+            .text{
+                p{
+                    font-size: 15px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width: shared.$laptop-bkp){
+    .hero{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .hero-inner{
+        h1{
+            font-size: 60px;
+            line-height: normal;
+            width: 70%;
+            span{
+                font-size: 60px;
+            line-height: normal;
+            }
+        }
+        .button{
+            width: 482px;
+            height: 80px;
+            gap: 150px;
+
+            p{
+                color: #FFF;
+                font-family: Outfit;
+                font-size: 23.5px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            span{
+                color: #FFF;
+                font-family: Outfit;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                
+            }
+
+            img{
+                width: 55px;
+                height: 55px;   
+            }
+            .heroo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding-left: 10px;
+
+            }
+
+            
+        }
+    }
+    .text{
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+        }
+    }
+    .frame{
+        bottom: -185px;
+    img{
+        height: 350px;
+    
+}
+}
+     }
+}

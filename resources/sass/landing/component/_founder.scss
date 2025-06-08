@@ -1,0 +1,255 @@
+  @use '../../global/shared' as shared;
+
+    .founder {
+        position: relative;
+        // background-image: url(/public/assets/svg/bg-founder.svg);
+        padding: 50px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        &::before{
+            content: '';
+            position: absolute;
+           // Adjust to your requirement
+            width: 100%; // Full width of the parent
+            height: 100%; // Full height of the parent
+            // background-position: right;
+            background-size: cover;
+            background-image: url('/public/assets/svg/bg-founder.svg') ;
+            background-repeat: no-repeat; // Example background
+            z-index: -1; // Place it behind the content
+        }
+        .petik-dua{
+            display: none;
+        }
+        .quote{
+            
+            position: absolute;
+            color: white;
+            top: 20px;
+            right: 30px;
+        }
+
+
+       .inner-founder{
+            
+            display: flex;
+            color: #ffffff;
+            gap: 10px;
+        
+       }
+    
+        h6 {
+            color: #FFF;
+            font-family: shared.$outfit;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+        }
+            img {
+                object-fit: cover;
+                
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+        }
+        
+    .founder-text{
+        
+        p {
+            position: absolute;
+            font-size: 12px;
+            line-height: 1.6;
+            font-weight: bold;
+    
+            span {
+                display: block;
+                font-size: 10px;
+                color: #ffffff;
+                margin-top: 5px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .inner-founder{
+        display: flex;
+        
+    }
+}
+
+@media(min-width: shared.$tablet-bkp){
+    .founder{
+        .quote{
+            display: none;
+        }
+        .petik-dua{
+            display: block;
+            position: absolute;
+            color: white;
+            top: 70px;
+            right: 60px;
+
+            img{
+                
+                width: 34.909px;
+                height: 28px;
+            }
+        }
+        .inner-founder{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            gap: 0;
+            // max-width: 900px;
+            h6{
+                font-size: 20px;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            img{
+                width: 158px;
+                height: 158px;
+            }
+        }
+
+        .founder-text{
+            padding-left: 34px;
+            
+           
+            p{
+                font-size: 16px;
+                margin: 0;
+                padding-top: 16px;
+            
+            span{
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+  
+    }
+    
+
+    }
+}
+
+@media(min-width: shared.$big-tablet-bkp){
+    .founder{
+        .quote{
+            display: none;
+        }
+        .petik-dua{
+            display: block;
+            position: absolute;
+            color: white;
+            top: 100px;
+            right: 175px;
+
+            img{
+                
+                width: 34.909px;
+                height: 28px;
+            }
+        }
+        .inner-founder{
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 127px;
+            padding-right: 127px;
+            gap: 0;
+            // max-width: 900px;
+            h6{
+                font-size: 22px;
+                font-weight: normal;
+                margin: 0;
+                width: 90%;
+            }
+
+            img{
+                width: 167px;
+                height: 167px;
+            }
+        }
+
+        .founder-text{
+            padding-left: 34px;
+            
+           
+            p{
+                font-size: 16px;
+                margin: 0;
+                padding-top: 16px;
+            
+            span{
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+  
+    }
+    
+
+    }
+}
+@media(min-width: shared.$laptop-bkp){
+    .founder{
+        height: 546px;
+        
+        .quote{
+            display: none;
+        }
+        
+        .petik-dua{
+            display: block;
+            position: absolute;
+            color: white;
+            top: 100px;
+            right: 250px;
+            }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+     
+        .inner-founder{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            max-width: 900px;
+            h6{
+                font-size: 32px;
+            }
+
+            img{
+                width: 230px;
+                height: 230px;
+            }
+        }
+
+        .founder-text{
+            padding-left: 30px;
+            gap: 48px;
+            p{
+                font-size: 20px;
+            
+            span{
+                font-size: 18px;
+            }
+        }
+  
+    }
+    
+    }
+}

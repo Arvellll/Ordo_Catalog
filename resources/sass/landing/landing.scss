@@ -1,0 +1,10 @@
+//pages
+@use './pages/homepage';
+
+//layouts
+@use './layouts/navbar';
+@use './layouts/footer';
+
+//components
+@use './component/hero';
+@use './component/founder'

@@ -1,0 +1,448 @@
+@use "../../global/shared" as shared;
+
+
+.fitur {
+    padding-top: 0px;
+    padding-bottom: 20px; 
+    background-color: #F7F7F7;
+
+    .fitur-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 24px; 
+        align-items: center; 
+        padding-top: 95px ;
+        padding-bottom: 30px;
+        padding-left: 22px;
+        padding-right: 22px;
+        
+    }
+
+    
+    .fitur1, .fitur2, .fitur3 {
+        background: #fff;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05); 
+        border-radius: 15px; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 9px; 
+        width: 90%; 
+        max-width: 300px;
+        
+    }
+
+    img {
+        width: 40px; 
+        height: 40px;
+        
+    }
+
+    h3 {
+        color: #0F0F35;
+        font-family: Outfit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+    }
+
+    p {
+        color: #0F0F35;
+        font-family: Outfit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+    }
+}
+.sponsor{
+    .sponsor-inner{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15.11px;
+    padding-bottom: 15.11px;
+    justify-content: space-between;
+    }
+    .sponsor-atas{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    .sponsor-bawah{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        .wrapper-mb{
+            width: 19.345px;
+            height: 25.052px;
+        }
+    }
+
+    .wrapper{
+        width: 30%;
+            img{
+                // width: 90px;
+                object-fit: contain;
+            }
+    }
+
+}
+.sponsor {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.content-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sponsor-atas,
+.sponsor-bawah {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+// .sponsor {
+//     display: flex;
+//     justify-content: center;
+//     padding: 40px 0;
+//     background: #fff;
+
+//     .content-sponsor {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 30px;
+        
+//     }
+
+//     .sponsor-inner {
+//         display: flex;
+        
+//         justify-content: center;
+
+
+//         div {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             gap: 20px;
+//         }
+
+//         img {
+//             max-width: 150px;
+//             height: auto;
+//         }
+//     }
+// }
+.contact{
+display: flex;
+flex-direction: column;
+align-items: center;
+p{
+    color: #101036;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+}
+
+    .button{
+        display: flex;
+        width: max-content;
+        border-radius: 375px;
+        background: #075E54;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: none;
+        padding: 4px 9px 5px 9px;  
+
+        span{
+            color: #FFF;
+            font-family: Outfit;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+p{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 10.313px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
+
+
+.founderr{
+    display: flex;
+}
+
+
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 50px 0;
+}
+}
+
+@media (min-width: shared.$tablet-bkp){
+    .fitur{
+        .fitur-inner{
+            padding-top: 170px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            padding-right: 0;
+            
+        }
+
+        .fitur1, .fitur2, .fitur3{
+           
+            width: 288px;
+            height: 162px;
+        }
+        
+        img{
+            width: 30px;
+        }
+    }
+
+    .sponsor{
+        .sponsor-inner{
+    
+        // padding-left: 64px;
+        // padding-right: 64px;
+        padding-top: 34.84px;
+        padding-bottom: 34.84px;
+        }
+
+        .sponsor-bawah{
+            .wrapper-mb{
+                width: 36.7px;
+                height: 47.527px;
+            }
+        }
+        .wrapper{
+            width: 40%;
+             img{
+            width:70px;
+            }
+        }
+}
+
+.contact{
+    .container{
+        padding-top: 68px;
+        padding-bottom: 162px;
+        gap: 36px;
+    }
+    .text{
+        p{
+            font-size: 34px;
+        }
+    }
+    .button{
+           gap: 150px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        .founderr{
+            p{
+                font-size: 20px;
+            }
+            span{
+                font-size: 22px;
+            }
+        }
+       
+    }
+}
+}
+
+@media (min-width: shared.$big-tablet-bkp){
+    .fitur{
+        .fitur-inner{
+            justify-content: center;
+        }
+    }
+
+    .sponsor{
+        .wrapper{
+            width: 40%;
+             img{
+            width:80px;
+            }
+        }
+    }
+
+    .contact{
+        .button{
+            gap: 90px;
+        }
+    }
+}
+
+@media (min-width: shared.$laptop-bkp){
+    .fitur{
+        .fitur-inner{
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            padding-top: 250px;
+        }
+
+        .fitur1, .fitur2, .fitur3 {
+            background: #fff;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05); 
+            border-radius: 15px; 
+            padding: 40px 40px 202px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 10px; 
+            
+            width: 400px;
+            max-width: 1000px;
+            
+            img {
+                width: 60px; 
+                height: 60px;
+                
+            }
+        
+            h3 {
+                color: #0F0F35;
+                font-family: Outfit;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        
+            p {
+                color: #0F0F35;
+                font-family: Outfit;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    .sponsor{
+        .sponsor-inner{
+        padding-left: 94px;
+        padding-right: 94px;
+        padding-top: 49px;
+        padding-bottom: 49px;
+        }
+
+        .wrapper{
+            
+            img{
+                width: 120px;
+            }
+        }
+        .sponsor-atas,.sponsor-bawah{
+            gap: 50px;
+
+            .wrapper-mb{
+                width: 50px;
+                height: 64.752px;
+            }
+        }
+        
+}
+    .button{
+        display: flex;
+        gap: 90px;
+    }
+    .contact{
+        .container {
+            padding-top: 86px;
+            padding-left: 220px;
+            padding-right: 220px;
+            padding-bottom:218px ;
+            gap: 60px;
+        }
+        .button{
+            
+            display: flex;
+            gap: 170px;
+
+    }
+        .text{
+            p{
+                font-size: 51px;
+                
+            }
+        }
+        .button{
+           
+            img{
+                width: 89.143px;
+                height: 89.143px;
+            }
+            .founderr{
+                align-items: center;
+                gap: 19px;
+                margin: 0;
+                p{
+                    font-size: 28px;
+                }
+                span{
+                    font-size: 26px;
+                }
+            }
+           
+        }
+    }
+}
+    
+

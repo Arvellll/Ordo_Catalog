@@ -1,0 +1,30 @@
+@use "../../global/shared" as shared;
+
+.navbar-landing{
+    background-image: url(/public/assets/images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+ 
+}
+ 
+@media(min-width: shared.$laptop-bkp){
+    .navbar-landing{
+        img{
+            
+            height: 50px;
+        }
+        .nav-logo{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    }
+}
